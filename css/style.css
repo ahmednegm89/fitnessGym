@@ -1,0 +1,1075 @@
+/* Start Variable */
+:root {
+  --main-color: #faba22;
+}
+/* End Variable */
+
+/* start global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+::selection {
+  background-color: #faba22;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+.container-me {
+  width: 1700px;
+  padding: 10px 5px;
+  margin: auto;
+}
+/* end global style */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  transition: 0.3s ease;
+  padding: 10px 0px;
+  background-color: #000;
+}
+header .container-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+header .logo i {
+  font-size: 30px;
+  margin-right: 5px;
+  color: transparent;
+  -webkit-text-stroke: 3px var(--main-color);
+  -moz-text-stroke: 3px var(--main-color);
+  -o-text-stroke: 3px var(--main-color);
+}
+header .menu-icon {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0px 20px;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: var(--main-color);
+}
+
+/* start landing section */
+.landing {
+  max-width: 100%;
+  padding: 100px 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.landing .container-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.landing .content {
+  width: 700px;
+}
+.landing .content h1 {
+  text-transform: uppercase;
+  font-size: 8em;
+  font-weight: bold;
+  text-align: left;
+}
+.landing .content .landing-btn {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.landing .content .landing-btn a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 1.5em;
+  background-color: var(--main-color);
+  color: #000;
+  border-radius: 50px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+.landing .content .landing-btn a:hover {
+  color: #fff;
+}
+.landing .content .landing-btn .two {
+  background-color: transparent;
+  border: 3px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.landing .content p {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.794);
+  line-height: 30px;
+}
+.landing .landing-img {
+  width: 800px;
+  position: relative;
+}
+/* end landing section */
+
+/* Start Gallery Section */
+.gallery {
+  width: 100%;
+  padding: 150px 0;
+  background-image: url("../images/12315.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .container-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .gallery-title {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.gallery .mySlider {
+  width: 80%;
+  background-image: url(../images/ahmed.png);
+  background-size: cover;
+  padding: 5px;
+}
+/* End Gallery section */
+
+/* Start Plans Section*/
+/* Start Plans */
+.plans {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #000;
+}
+.plans .plans-title {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.plans .container-me {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.plans .container-me .plan {
+  width: 25%;
+  padding: 30px 50px;
+  border: 3px solid #000;
+  border-radius: 15px;
+  background: #000;
+  color: #fff;
+  border: 3px solid var(--main-color);
+}
+.plans .container-me .plan ul {
+  margin-top: 30px;
+  padding: 0;
+}
+.plans .container-me .plan ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.plans .container-me .plan ul li i {
+  margin-right: 15px;
+  color: #faba22;
+  font-size: 20px;
+}
+.plans .container-me .plan ul li p {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+}
+.plans .container-me .plan ul li.cancel {
+  text-decoration: line-through;
+  color: var(--main-color);
+  opacity: 0.5;
+}
+.plans .container-me .plan a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 40px;
+  border: 3px solid var(--main-color);
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s linear;
+}
+.plans .container-me .plan a:hover {
+  background-color: var(--main-color);
+  color: #000;
+}
+/* End Plans */
+/* End Plans Section */
+
+/* start calculator section */
+.calculator {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #fff;
+  position: relative;
+}
+.calculator .img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -60px;
+  overflow: hidden;
+}
+.calculator .title {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.calculator .container-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.calculator form {
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  color: #000;
+}
+.calculator form .cal-inputs {
+  width: 74%;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.calculator form .cal-inputs label {
+  width: 120px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.calculator form .cal-inputs input {
+  width: 100%;
+  font-size: 18px;
+}
+.calculator form .cal-result {
+  width: 24%;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.calculator form .cal-result input {
+  width: 100px;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.calculator form .cal-result label {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.calculator form select {
+  width: 49%;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.calculator form .cal-btn {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s linear;
+}
+.cal-show {
+  width: 60%;
+  margin: auto;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  padding: 20px 15px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.cal-show .main-cal h2 {
+  text-align: center;
+}
+.cal-show .main-cal {
+  margin-bottom: 30px;
+}
+.cal-show .loss {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cal-show .loss div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.cal-show .loss div h5:not(:nth-child(2)) {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+/* end calculator section */
+
+/* Start tools */
+.tools-section {
+  padding: 100px 0;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.tools-section .tools-title {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.tools-section .img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -60px;
+  overflow: hidden;
+}
+.tools-section .img img {
+  width: 100%;
+}
+.tools-section .container-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tools-section .container-me .table {
+  width: 49%;
+  border-collapse: collapse;
+  background-color: #f000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: #fff;
+  border-radius: 20px;
+}
+.tools-section .container-me .table tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tools-section .container-me .table tr th {
+  width: 100%;
+  background-color: #f00;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.157);
+  font-size: 25px;
+  border-radius: 20px 20px 0 0;
+}
+.tools-section .container-me .table tr td {
+  width: calc(100% / 3);
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.157);
+  border-right: none;
+}
+.tools-section .container-me .table tr:nth-child(7) td:nth-child(1) {
+  border-left: none;
+  border-bottom: none;
+}
+.tools-section .container-me .table tr:nth-child(7) td:nth-child(3) {
+  border-right: none;
+  border-bottom: none;
+}
+.tools-section .container-me .table tr :not(:first-child) {
+  text-align: center;
+}
+.tools-section .container-me .table tr td.spcial {
+  font-weight: bold;
+}
+.tools-section .container-me .table tr td img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.tools-section .container-me .low5 tr th {
+  background-color: rgb(100, 167, 0);
+}
+/* exersises section */
+.exercises {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #eee;
+}
+.exercises .carousel {
+  width: 90%;
+  margin: auto;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.exercises-tilte {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.exercises .carousel-item img {
+  margin: auto;
+  width: 700px;
+}
+.exercises .carousel-indicators button {
+  background: rgba(0, 0, 0, 0.269);
+  width: 20px;
+}
+.exercises .carousel-caption h5,
+p {
+  color: #000;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.369);
+}
+
+/* Start Footer Style */
+footer {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #000;
+}
+footer .container-me .top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+footer .container-me .top div,
+footer .container-me .top form {
+  width: 20%;
+}
+footer .container-me .top h2 {
+  width: fit-content;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  border-bottom: 3px dashed var(--main-color);
+}
+footer .container-me .top a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s linear;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+footer .container-me .top a:hover {
+  color: var(--main-color);
+}
+footer .container-me .top form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 5px;
+}
+footer .container-me .top form input[type="submit"] {
+  width: 49%;
+  display: inline;
+  transition: 0.3s linear;
+}
+footer .container-me .top form input[type="submit"]:hover,
+footer .container-me .top form a.btn:hover {
+  background-color: var(--main-color);
+  color: #000;
+  font-weight: 500;
+}
+footer .container-me .top form input::placeholder {
+  color: #000;
+}
+footer .container-me .top form a {
+  width: 49%;
+  display: inline;
+  float: right;
+  transition: 0.3s linear;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 4px;
+  border-radius: 5px;
+}
+footer .container-me .follow-us {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+  color: #fff;
+}
+footer .container-me .follow-us i {
+  font-size: 25px;
+  margin: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s linear;
+}
+footer .container-me .follow-us i:hover {
+  color: var(--main-color);
+}
+footer .container-me .follow-us p {
+  color: #fff;
+  font-size: 20px;
+}
+/* End Footer Style */
+
+/* Media ..................................................................................................................... */
+@media (max-width: 1700px) {
+  .container-me {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .plans .container-me {
+    flex-wrap: wrap;
+  }
+  .plans .container-me .plan {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  .calculator form .cal-result input {
+    width: 80px;
+  }
+  .calculator form .cal-result label {
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: 600;
+  }
+  .calculator form select {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .calculator form .cal-btn {
+    padding: 10px;
+    font-size: 15px;
+    color: #000;
+  }
+}
+@media (max-width: 1200px) {
+  .container-me {
+    width: 100%;
+    padding: 0 10px;
+  }
+  header .menu-icon {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+  }
+  header nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 888;
+    background-color: #000;
+    display: none;
+  }
+  header nav.show {
+    display: block;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  header nav ul li:not(:nth-child(4)) {
+    margin-bottom: 20px;
+  }
+  .landing {
+    padding: 100px 0;
+    background-image: url("../images/50d2ad92284b705b57165f77affa7cc4.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .landing .container-me {
+    display: block;
+    overflow: hidden;
+  }
+  .landing .content {
+    width: 100%;
+    text-align: center;
+  }
+  .landing .content h1 {
+    font-size: 8em;
+    text-align: center;
+  }
+  .landing .content .landing-btn {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .landing .content .landing-btn a {
+    font-size: 1.2em;
+    padding: 10px 30px;
+    margin: 20px;
+    margin-bottom: 30px;
+  }
+  .landing .content .landing-btn a:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .landing .content p {
+    display: none;
+  }
+  .landing .landing-img {
+    display: none;
+  }
+  .gallery .mySlider {
+    width: 100%;
+  }
+  .plans .container-me {
+    flex-wrap: wrap;
+  }
+  .plans .container-me .plan {
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .calculator .container-me {
+    flex-direction: column;
+  }
+  .calculator form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .calculator .cal-show {
+    width: 100%;
+  }
+  .tools-section .container-me {
+    flex-direction: column;
+  }
+  .tools-section .container-me .table {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .exercises .carousel {
+    width: 100%;
+  }
+  .exercises-tilte {
+    font-size: 20px;
+  }
+  footer .container-me .top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .container-me .top div {
+    width: 33.33%;
+    margin-bottom: 30px;
+  }
+  footer .container-me .top form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-me {
+    width: 100%;
+    padding: 0 10px;
+  }
+  header .menu-icon {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+  }
+  header nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 888;
+    background-color: #000;
+    display: none;
+  }
+  header nav.show {
+    display: block;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  header nav ul li:not(:nth-child(4)) {
+    margin-bottom: 20px;
+  }
+  .landing {
+    padding: 100px 0;
+    background-image: url("../images/50d2ad92284b705b57165f77affa7cc4.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .landing .container-me {
+    display: block;
+    overflow: hidden;
+  }
+  .landing .content {
+    width: 100%;
+    text-align: center;
+  }
+  .landing .content h1 {
+    font-size: 8em;
+    text-align: center;
+  }
+  .landing .content .landing-btn {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .landing .content .landing-btn a {
+    font-size: 1.2em;
+    padding: 10px 30px;
+    margin: 20px;
+    margin-bottom: 30px;
+  }
+  .landing .content .landing-btn a:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .landing .content p {
+    display: none;
+  }
+  .landing .landing-img {
+    display: none;
+  }
+  .gallery .mySlider {
+    width: 100%;
+  }
+  .plans .container-me {
+    flex-wrap: wrap;
+  }
+  .plans .container-me .plan {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .calculator .container-me {
+    flex-direction: column;
+  }
+  .calculator form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .calculator .cal-show {
+    width: 100%;
+  }
+  .tools-section .container-me {
+    flex-direction: column;
+  }
+  .tools-section .container-me .table {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .exercises .carousel {
+    width: 100%;
+  }
+  .exercises-tilte {
+    font-size: 20px;
+  }
+  footer .container-me .top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .container-me .top div {
+    width: 33.33%;
+    margin-bottom: 30px;
+  }
+  footer .container-me .top form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-me {
+    width: 100%;
+    padding: 0 10px;
+  }
+  header .menu-icon {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+  }
+  header nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 888;
+    background-color: #000;
+    display: none;
+  }
+  header nav.show {
+    display: block;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  header nav ul li:not(:nth-child(4)) {
+    margin-bottom: 20px;
+  }
+  .landing {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-image: url("../images/50d2ad92284b705b57165f77affa7cc4.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .landing .container-me {
+    display: block;
+    overflow: hidden;
+  }
+  .landing .content {
+    width: 100%;
+    text-align: center;
+  }
+  .landing .content h1 {
+    font-size: 5em;
+    text-align: center;
+  }
+  .landing .content .landing-btn {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .landing .content .landing-btn a {
+    font-size: 1.1em;
+    padding: 10px 30px;
+    margin: 20px;
+    margin-bottom: 30px;
+  }
+  .landing .content .landing-btn a:nth-child(1) {
+    margin-bottom: 10px;
+  }
+  .landing .content p {
+    display: none;
+  }
+  .landing .landing-img {
+    display: none;
+  }
+  .gallery {
+    padding: 50px 0;
+  }
+  .gallery .gallery-title {
+    font-size: 20px;
+  }
+  .gallery .mySlider {
+    width: 100%;
+  }
+  .plans {
+    padding: 50px 0;
+  }
+  .plans .container-me {
+    flex-direction: column;
+  }
+  .plans .plans-title {
+    font-size: 20px;
+  }
+  .plans .container-me .plan {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .calculator {
+    padding: 50px 0;
+  }
+  .calculator .title {
+    font-size: 20px;
+  }
+  .calculator .container-me {
+    flex-direction: column;
+  }
+  .calculator form {
+    width: 100%;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .calculator form .cal-inputs {
+    justify-content: center;
+  }
+  .calculator form .cal-inputs label {
+    width: fit-content;
+    font-size: 15px;
+  }
+  .calculator form .cal-inputs input {
+    display: none;
+  }
+  .calculator form .cal-result {
+    width: 70%;
+    justify-content: center;
+    margin-top: -20px;
+  }
+  .calculator form .cal-result input {
+    width: 180px;
+    font-size: 15px;
+    padding-left: 0px;
+    border-bottom: 2px solid #000;
+    color: #000;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .calculator form .cal-result label {
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: 600;
+  }
+  .calculator form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .calculator form .cal-btn {
+    padding: 10px;
+    font-size: 15px;
+    color: #000;
+  }
+  .calculator .cal-show {
+    width: 100%;
+  }
+  .cal-show .loss {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cal-show .loss div {
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .cal-show .loss div .maintain-num,
+  .cal-show .loss div .mild-num,
+  .cal-show .loss div .weight-num,
+  .cal-show .loss div .extreme-num {
+    justify-content: flex-end;
+  }
+  .cal-show .loss div .maintain-text,
+  .cal-show .loss div .mild-text,
+  .cal-show .loss div .weight-text,
+  .cal-show .loss div .extreme-text {
+    justify-content: center;
+  }
+  .calculator .cal-box div:nth-child(1) {
+    padding-top: 15px;
+  }
+  .calculator .cal-box div.cal-number:nth-child(1) {
+    padding-top: -10px;
+  }
+  .calculator .cal-box div.cal-number:not(:nth-child(2)) {
+    padding-top: 35px;
+  }
+  .tools-section {
+    padding: 50px 0;
+  }
+  .tools-section .tools-title {
+    font-size: 20px;
+  }
+  .tools-section .container-me {
+    flex-direction: column;
+  }
+  .tools-section .container-me .table {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+  .tools-section .container-me .table tr td {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .tools-section .container-me .table tr td img {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+  }
+  .exercises .carousel {
+    width: 100%;
+  }
+  .exercises-tilte {
+    font-size: 20px;
+  }
+  .exercises .carousel-item img {
+    width: 100%;
+  }
+  footer .container-me .top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .container-me .top div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer .container-me .top form {
+    width: 100%;
+  }
+}
